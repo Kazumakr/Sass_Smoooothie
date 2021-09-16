@@ -1,0 +1,28 @@
+$color-black: #000;
+$color-dark: #333;
+$color-white: #fff;
+$color-primary: #ff384a;
+
+$font-Baskerville: "Baskerville", sans-serif;
+
+%fullSpace {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin centering($topValue) {
+	position: absolute;
+	top: $topValue;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flexLayout {
+	display: flex;
+	justify-content: space-around;
+}
